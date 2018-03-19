@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<h1>Coding Quiz</h1>
+
+<body>
+
+    <div class="container">
+            <h2>Click start below</h2>
+            <button id="HTMLQuestions" type="button" class="btn btn-warning">Start</button>
+            <!-- <button id="CSSQuestions"type="button" class="btn btn-primary">CSS</button> -->
+            <!-- <button id="javaScriptQuestions" type="button" class="btn btn-warning">JavaScript</button>
+            <button id="jqueryQuestions"type="button" class="btn btn-primary">Jquery</button> -->
+            
+            <p>
+               You have 60 seconds to complete 3 questions. Click reset at the end if you want to take the quiz again.     
+            </p>
+            <div class="container">
+
+                <!-- Display the Questions and the Answers using radio buttons -->
+                <h3>Is HTML considered back end or front end development?</h3>
+                      <h5><input id="Q1A" type="radio" name="Q1" value="a">Front End Development<br></h5>
+                  <h5><input id="Q1B" type="radio" name="Q1" value="b">Back End Development<br></h5>
+                  <h5><input id="Q1C" type="radio" name="Q1" value="c">Both<br></h5>
+                      <br>
+          
+                      <h3>What year was HTML created?</h3>
+                      <h5><input id="Q2A" type="radio" name="Q2" value="a">1983<br></h5>
+                  <h5><input id="Q2B" type="radio" name="Q2" value="b">1984<br></h5>
+                  <h5><input id="Q2C" type="radio" name="Q2" value="c">1989<br></h5>
+                      <br>
+          
+                      <h3>What does HTML mean?</h3>
+                      <h5><input id="Q3A" type="radio" name="Q3" value="a">Hightext Mobile Language<br></h5>
+                  <h5><input id="Q3B" type="radio" name="Q3" value="b">Hypertext Machine Language<br></h5>
+                  <h5><input id="Q3C" type="radio" name="Q4" value="c">Hypertext Markup Language<br></h5>
+                      <br>
+          
+                <!-- The Submit button executes a function to check the answers -->
+                <button type="button" onclick="checkAnswers()">Submit</button>
+                      <!-- The Reset button executes a function to uncheck all the answers and clear the results -->
+                      <button type="button" onclick="resetAnswers()">Reset</button>
+          
+                      <p id="demo"></p>
+
+    <div><span id="seconds"></span>Seconds left</div>
+
+   <div><span class="DisplayQuestions"></span></div>
+<br />
+</div>
+
+   
+        <!-- <button id="submit">Submit Quiz</button> -->
+    <!-- <div id="results">Results</div>        -->
+
+
+
+
+<script src="assets/javascript/app.js"></script>
+
+</body>
+
+
+
+</html>
+
+<!-- You'll create a trivia form with multiple choice or true/false options (your choice).
+
+The player will have a limited amount of time to finish the quiz. 
+
+
+The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
+
+
+Don't let the player pick more than one answer per question.
+Don't forget to include a countdown timer. -->
